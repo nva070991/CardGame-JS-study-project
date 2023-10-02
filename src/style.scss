@@ -1,0 +1,310 @@
+@font-face {
+    font-family: StratosSkyeng;
+    src: url(./statosskyeng-v1.001/Desktop%20fonts/stratosskyeng-regular.otf); /* Путь к файлу со шрифтом */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: 55px;
+    padding-right: 55px;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+.top {
+    font-family: 'StratosSkyeng';
+    width: 100%;
+    height: 148px;
+    background-color: #004980;
+}
+
+body {
+    background-color: #004980;
+}
+
+.app {
+    font-family: 'StratosSkyeng';
+    width: 100%;
+    background-color: #004980;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    &__popUpLoss__button {
+        color: #fff;
+            background-color: #7ac100;
+            text-align: center;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 246px;
+            height: 50.003px;
+            flex-shrink: 0;
+            border-radius: 12px;
+            border: none;
+            margin-top: 40px;
+    
+    }
+
+    &__popUpFinish {
+        display: flex;
+        flex-direction: column;
+        width: 480px;
+        height: 460px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -230px 0 0 -240px;
+
+        align-items: center;
+        border-radius: 12px;
+        background-color: #c2f5ff;
+        
+        &__head {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__text {
+                color: var(--blue-120, #004980);
+                font-variant-numeric: lining-nums proportional-nums;
+
+                font-family: StratosSkyeng;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 48px;
+                margin-top: 9px;
+
+
+            }
+            &__img {
+                width: 96px;
+                height: 96px;
+                margin-top: 26px;
+            }
+        }
+        &__titleTime {
+            color: #000;
+            font-variant-numeric: lining-nums proportional-nums;
+
+            font-family: StratosSkyeng;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-top: 28px;
+
+        }
+        &__time {
+            color: #000;
+            font-family: StratosSkyeng;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 72px; /* 112.5% */
+            margin-top: 10px;
+
+        }
+        &__button {
+            color: #fff;
+            background-color: #7ac100;
+            text-align: center;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 246px;
+            height: 50.003px;
+            flex-shrink: 0;
+            border-radius: 12px;
+            border: none;
+            margin-top: 40px;
+        }
+    }
+
+    &__card {
+        width: 95px;
+        height: 133px;
+        flex-shrink: 0;
+    }
+
+    &__popup {
+        display: flex;
+        flex-direction: column;
+        width: 480px;
+        height: 460px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -230px 0 0 -240px;
+
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        background-color: #c2f5ff;
+
+        &__text {
+            color: #004980;
+            text-align: center;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 48px;
+            width: 208px;
+            height: 96px;
+        }
+        &__difficulty {
+            display: flex;
+            margin-top: 48px;
+            gap: 26px;
+
+            &__item {
+                color: #0080c1;
+                text-align: center;
+                font-size: 64px;
+                font-weight: 400;
+                line-height: 72px; /* 112.5% */
+                width: 97px;
+                height: 98px;
+                flex-shrink: 0;
+                border-radius: 12px;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__item_selected {
+                background-color: #0080c1;
+                text-align: center;
+                font-size: 64px;
+                font-weight: 400;
+                line-height: 72px; /* 112.5% */
+                width: 97px;
+                height: 98px;
+                flex-shrink: 0;
+                border-radius: 12px;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &__button {
+            color: #fff;
+            background-color: #7ac100;
+            text-align: center;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 246px;
+            height: 50.003px;
+            flex-shrink: 0;
+            border-radius: 12px;
+            border: none;
+            margin-top: 67px;
+        }
+        &__button:active {
+            background-color: white;
+            color: #7ac100;
+        }
+    }
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__stopwatch {
+        color: white;
+        &__time {
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-family: StratosSkyeng;
+            font-size: 64px;
+            font-weight: 400;
+            line-height: 72px;
+        }
+        &__title {
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: StratosSkyeng;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px; /* 200% */
+            display: flex;
+            text-align: right;
+            gap: 16px;
+
+            &__min {
+                width: 60px;
+            }
+            &__sec {
+                width: 64px;
+            }
+        }
+    }
+    &__button {
+        color: #fff;
+        background-color: #7ac100;
+        text-align: center;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 246px;
+        height: 50.003px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        border: none;
+    }
+    &__button:active {
+        background-color: white;
+        color: #7ac100;
+    }
+}
+
+// Mobile
+@media (max-width: 530px) {
+    .app {
+        &__popup {
+            width: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -230px 0 0 -150px;
+            &__difficulty {
+                gap: 8px;
+                &__item {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+}
